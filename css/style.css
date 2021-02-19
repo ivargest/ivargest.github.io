@@ -1,0 +1,818 @@
+/* FUENTES */
+
+@font-face {
+  font-family:rickmorty;
+  src: url(../rsc/fonts/rickmorty.otf) format('opentype');
+
+}
+
+/* VARIABLES */
+
+/* CSS COMÚN */
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0px;
+ padding: 0px;
+ height: 410vh;
+}
+
+nav {
+	z-index: 100;
+	position: sticky;
+	top: -55px;
+	width: 100%;
+	height: 24vh;
+	min-height: 160px;
+	background-image: url(../rsc/img/backnav.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	height: 100%;
+}
+
+.logo img {
+	margin-top: 70%;
+	height: 50%;
+}
+
+.menuizq {
+	position: relative;
+	width: 40%;
+	height: 100%;
+	padding-right: 3vh;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav a {
+	position: relative;
+	top: 40%;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-decoration: none;
+	color: white;
+	font-size: 26px;
+	font-family: "rickmorty";
+	height: 10vh;
+}
+
+nav a:hover {
+	text-shadow: 0px 0px 7px #57A046;
+	transform: scale(1.1);
+
+}
+
+.menuder {
+	position: relative;
+	width: 40%;
+	height: 100%;
+	padding-left: 3vh;
+	display: flex;
+	justify-content: flex-start;
+}
+
+section {
+	position: absolute;
+	top: 10vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.firstscreen {
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	min-height: 500px;
+	overflow: hidden;
+}
+
+.firstscreen video {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.meesek {
+	position: absolute;
+	right: 0px;
+	top: 10%;
+	width: 100%;
+	height: 90%;
+	z-index: 9;
+	background-image: url(../rsc/img/meeseks.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	transform: translateX(60vw);
+	transition: 0.5s;
+}
+
+.meesek div{
+	position: absolute;
+	top: 30%;
+	right: 0px;
+	text-align: right;
+	width: 100%;
+	color: #39A4F9;
+	font-family: "rickmorty";
+	font-size: 10vh;
+	line-height: 9vh;
+	margin-right: 45vh;
+	text-shadow: 0px 0px 10px black;
+}
+
+.meesek a {
+	position: absolute;
+	border-radius: 40%;
+	top: 57%;
+	right: 0px;
+	text-align: center;
+	width: 13vh;
+	color: white;
+	font-family: "rickmorty";
+	font-size: 10vh;
+	line-height: 9vh;
+	margin-right: 57vh;
+	text-shadow: 0px 0px 10px black;
+	text-decoration: none;
+	background-color: #F34E34;
+	box-shadow: 0px 0px 10px black;
+}
+
+.meesek a:hover {
+	transform: scale(1.2);
+}
+
+.meesek a img {
+	height: 55px;
+	padding: 2px;
+}
+
+.firstscreen:hover .meesek {
+	transform: translateX(0vw);
+}
+
+.separador {
+	position: absolute;
+	top: 75%;
+	z-index: 20;
+	width: 100%;
+	height: 24vh;
+	min-height: 160px;
+	background-image: url(../rsc/img/separator.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.aire {
+	width: 100%;
+	height: 10vh;
+	background-color: #0B090B;
+}
+
+.secondscreen {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	perspective: 800px;
+}
+
+.secondscreen video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mortysales {
+	z-index: 80;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 5.9vh;
+	background-color: #0B090B;
+}
+
+.morty2 {
+	z-index: 82;
+	position: absolute;
+	width: 20%;
+	height: 80vh;
+	background-image: url(../rsc/img/morty2.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	transition: 0.5s;
+}
+
+.secondscreen img {
+	position: absolute;
+	height: 80vh;
+	right: 1vh;
+	bottom: 1vh;
+	z-index: 82;
+	perspective: 800px;
+	transform: translate(120%);
+	transition: 0.5s;
+}
+
+.secondscreen:hover img {
+	transform: translate(0px);
+}
+
+.separador3 {
+	position: absolute;
+	top: 0%;
+	z-index: 20;
+	width: 100%;
+	height: 8vh;
+	min-height: 40px;
+	background-image: url(../rsc/img/separator3.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.separador2 {
+	position: absolute;
+	top: 82vh;
+	z-index: 20;
+	width: 100%;
+	height: 18vh;
+	min-height: 100px;
+	background-image: url(../rsc/img/separator2.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container {
+	z-index: 80;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: 65%;
+	transform: translate(-150%,-50%) rotateY(70deg) rotateZ(-5deg);
+	transition: 1s;
+}
+
+.secondscreen:hover .container {
+	transform: translate(-50%,-50%) rotateY(5deg) rotateZ(0deg);
+}
+
+.hex1 {
+	position: absolute;
+	top: 17%;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex1:hover {
+	background-image: url(../rsc/img/hex1hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex2 {
+	position: absolute;
+	top: 50.5%;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex2:hover {
+	background-image: url(../rsc/img/hex2hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex3 {
+
+	position: absolute;
+	left: 19vh;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex3.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex3:hover {
+	background-image: url(../rsc/img/hex3hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex4 {
+	position: absolute;
+	left: 19vh;
+	top: 33.5%;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex4.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex4:hover {
+	background-image: url(../rsc/img/hex4hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex5 {
+
+	position: absolute;
+	left: 19vh;
+	top: 67%;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex5.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex5:hover {
+	background-image: url(../rsc/img/hex5hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex6 {
+	position: absolute;
+	top: 17%;
+	left: 38vh;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex6.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex6:hover {
+	background-image: url(../rsc/img/hex6hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex7 {
+	position: absolute;
+	top: 50.5%;
+	left: 38vh;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex7.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex7:hover {
+	background-image: url(../rsc/img/hex7hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex8 {
+
+	position: absolute;
+	left: 57vh;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex8.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex8:hover {
+	background-image: url(../rsc/img/hex8hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex9 {
+	position: absolute;
+	left: 57vh;
+	top: 33.5%;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex9.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex9:hover {
+	background-image: url(../rsc/img/hex9hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex10 {
+
+	position: absolute;
+	left: 57vh;
+	top: 67%;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex10.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex10:hover {
+	background-image: url(../rsc/img/hex10hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex11 {
+	position: absolute;
+	top: 17%;
+	left: 76vh;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex11.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex11:hover {
+	background-image: url(../rsc/img/hex11hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.hex12 {
+	position: absolute;
+	top: 50.5%;
+	left: 76vh;
+	height: 25vh;
+	width: 25vh;
+	background-image: url(../rsc/img/hex12.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.hex12:hover {
+	background-image: url(../rsc/img/hex12hover.png);
+	opacity: 1;
+	transform: scale(1.2);
+	z-index: 82;
+}
+
+.thirdscreen {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../rsc/img/thirdscreen.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+.separador4 {
+	position: absolute;
+	top: 82vh;
+	z-index: 20;
+	width: 100%;
+	height: 18vh;
+	min-height: 100px;
+	background-image: url(../rsc/img/separator4.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container2 {
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	width: 120%;
+	height: 74%;
+	transform: translate(-50%,-50%);
+}
+
+.vance {
+	height: 34vh;
+	width: 34vh;
+	border-radius: 17vh;
+	margin-right: 2%;
+	background-image: url(../rsc/img/vance.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid 7px #0B090B;
+	cursor: pointer;
+}
+
+.letrero {
+	background-color: #0B090B;
+	font-family: "rickmorty";
+	font-size: 32px;
+	color: white;
+	border-radius: 10px;
+	padding: 0 20px;
+	position: relative;
+	top: 10%;
+	left: 10%;
+	width: 90%;
+	text-align: center;
+	display: none;
+}
+
+.subcontainer2 img {
+	z-index: 30;
+	position: relative;
+	height: 20vh;
+	transform: translate(-10vh, 15vh);
+	display: none;
+}
+
+.subcontainer3 img {
+	z-index: 30;
+	position: relative;
+	height: 20vh;
+	transform: translate(-10vh, 15vh);
+	display: none;
+}
+
+.vance:hover {
+	transform: scale(1.05);
+	box-shadow: inset 0px 0px 20px 10px #8DF359;
+}
+
+.vance:hover .letrero {
+	display: block;
+}
+
+.vance:hover img {
+	display: block;
+}
+
+.vance:active {
+	box-shadow: inset 0px 0px 70px 70px #8DF359;
+	transition: 2s;
+}
+
+.supernova {
+	height: 34vh;
+	width: 34vh;
+	border-radius: 17vh;
+	margin-left: 2%;
+	background-image: url(../rsc/img/supernova.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid 7px #0B090B;
+	cursor: pointer;
+}
+
+.supernova:hover {
+	transform: scale(1.05);
+	box-shadow: inset 0px 0px 20px 10px #8DF359;
+}
+
+.supernova:hover .letrero {
+	display: block;
+}
+
+.supernova:hover img {
+	display: block;
+}
+
+.supernova:active {
+	box-shadow: inset 0px 0px 70px 70px #8DF359;
+	transition: 2s;
+}
+
+.crocubot {
+	height: 34vh;
+	width: 34vh;
+	border-radius: 17vh; 
+	margin-right: 2%;
+	background-image: url(../rsc/img/crocubot.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid 7px #0B090B;
+	cursor: pointer;
+}
+
+.crocubot:hover {
+	transform: scale(1.05);
+	box-shadow: inset 0px 0px 20px 10px #8DF359;
+}
+
+.crocubot:hover .letrero {
+	display: block;
+}
+
+.crocubot:hover img {
+	display: block;
+}
+
+.crocubot:active {
+	box-shadow: inset 0px 0px 70px 70px #8DF359;
+	transition: 2s;
+}
+
+.allanrails {
+	height: 34vh;
+	width: 34vh;
+	border-radius: 17vh; 
+	margin-right: 2%;
+	margin-left: 2%;
+	background-image: url(../rsc/img/allanrails.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid 7px #0B090B;
+	cursor: pointer;
+}
+
+.allanrails:hover {
+	transform: scale(1.05);
+	box-shadow: inset 0px 0px 20px 10px #8DF359;
+}
+
+.allanrails:hover .letrero {
+	display: block;
+}
+
+.allanrails:hover img {
+	display: block;
+}
+
+.allanrails:active {
+	box-shadow: inset 0px 0px 70px 70px #8DF359;
+	transition: 2s;
+}
+
+.millionants {
+	height: 34vh;
+	width: 34vh;
+	border-radius: 17vh;
+	margin-left: 2%;
+	background-image: url(../rsc/img/millionants.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid 7px #0B090B;
+	cursor: pointer;
+}
+
+.millionants:hover {
+	transform: scale(1.05);
+	box-shadow: inset 0px 0px 20px 10px #8DF359;
+}
+
+.millionants:hover .letrero {
+	display: block;
+}
+
+.millionants:hover img {
+	display: block;
+}
+
+.millionants:active {
+	box-shadow: inset 0px 0px 70px 70px #8DF359;
+	transition: 2s;
+}
+
+.subcontainer2 {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	perspective: 800px;
+	transform: translateX(100%);
+	transition: 0.5s;
+}
+
+.thirdscreen:hover .subcontainer2 {
+	transform: translateX(0px);
+}
+
+.subcontainer3 {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	perspective: 800px;
+	transform: translateX(-100%);
+	transition: 0.5s;
+}
+
+.thirdscreen:hover .subcontainer3 {
+	transform: translateX(0px);
+}
+
+.contact {
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	background-color: #1C1C1C;
+	overflow: hidden;
+}
+
+.container5 {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.formu {
+	height: 70%;
+	width: 50%;
+	background-color: red;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}
+.formimage {
+	height: 90%;
+	width: 40%;
+	background-color: blue;
+}
+
+
+
+footer {
+	position: absolute;
+	top: 390vh;
+	height: 20vh;
+	width: 100%;
+	background-color: #0B090B;
+	bottom: 0px;
+}
+
+/* RESPONSIVE */
+
+/* ANIMACIONES */
