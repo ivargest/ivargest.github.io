@@ -773,44 +773,170 @@ section {
 	transform: translateX(0px);
 }
 
-.contact {
+.calculador {
 	position: relative;
 	width: 100%;
-	height: 80vh;
-	background-color: #1C1C1C;
+	height: 100vh;
+	background-image: url(../rsc/img/clase.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	overflow: hidden;
 }
 
-.container5 {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
+.calculadora {
+	perspective: 800px;
 }
 
-.formu {
-	height: 70%;
-	width: 50%;
-	background-color: red;
-	margin-bottom: 5vh;
-	margin-top: 5vh;
+form {
+    border-radius: 20px;
+    width: 30%;
+    min-width: 400px;
+    position: relative;
+    left: 50%;
+    top: 50vh;
+    transform: rotateY(10deg) rotateX(5deg) translate(-80%, -50%);
+    background-color: #101010;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:	'textopantalla textopantalla textopantalla textopantalla'
+							'siete ocho nueve suma'
+							'cuatro cinco seis resta'
+							'uno dos tres multiplicacion'
+                            'cero borrar resultado division';
 }
-.formimage {
-	height: 90%;
-	width: 40%;
-	background-color: blue;
+
+form input {
+    max-height: 100px;
+    min-height: 40px;
+    height: 10vh;
+    border-radius: 10px;
+    border: none;
+    font-size: 3rem;
+    font-family: "rickmorty"
+}
+
+form input:hover {
+	box-shadow: inset 1px 1px 10px 5px #264F26;
+}
+
+.textscreen {
+    grid-area: textopantalla;
+    max-height: 100px;
+    min-height: 40px;
+    height: 10vh;
+    border-radius: 10px;
+    border: none;
+    background-image: url(../rsc/img/calcback.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textscreen img {
+    height: 90%;
+    padding: 0px 10px;
 }
 
 
+p#textoPantalla {
+    margin: 0px;
+    text-align: right;
+    width: 80%;
+    font-size: 4rem;
+    font-family: "rickmorty";
+}
 
-footer {
+.siete {
+    background-color: #32922B;
+    grid-area: siete;
+}
+
+.ocho {
+    background-color: #32922B;
+    grid-area: ocho;
+}
+
+.nueve {
+    background-color: #32922B;
+    grid-area: nueve;
+}
+
+.suma {
+    background-color: #235E20;
+    grid-area: suma;
+}
+
+.cuatro {
+    background-color: #32922B;
+    grid-area: cuatro;
+}
+
+.cinco {
+    background-color: #32922B;
+    grid-area: cinco;
+}
+
+.seis {
+    background-color: #32922B;
+    grid-area: seis;
+}
+
+.resta {
+    background-color: #235E20;
+    grid-area: resta;
+}
+
+.uno {
+    background-color: #32922B;
+    grid-area: uno;
+}
+
+.dos {
+    background-color: #32922B;
+    grid-area: dos;
+}
+
+.tres {
+    background-color: #32922B;
+    grid-area: tres;
+}
+
+.multiplicacion {
+    background-color: #235E20;
+    grid-area: multiplicacion;
+}
+
+.cero {
+    background-color: #32922B;
+    grid-area: cero;
+}
+
+.division {
+    background-color: #235E20;
+    grid-area: division;
+}
+
+.resultado {
+    background-color: #76ED82;
+    grid-area: resultado;
+}
+
+.borrar {
+    background-color: #526351;
+    grid-area: borrar;
+}
+
+img#jessica {
 	position: absolute;
-	top: 390vh;
-	height: 20vh;
-	width: 100%;
-	background-color: #0B090B;
-	bottom: 0px;
+	height: 100vh;
+	right: 10vw;
+	transform: translateY(-50%);
+	
 }
 
 /* RESPONSIVE */
