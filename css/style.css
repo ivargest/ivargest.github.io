@@ -22,8 +22,10 @@ body {
 
 .backvideo video {
     position: absolute;
+    height: 100vh;
     width: 100vw;
     object-fit: cover;
+    object-position: center;
 }
 
 /* RESPONSIVE */
