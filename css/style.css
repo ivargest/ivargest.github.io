@@ -4,6 +4,16 @@
 
 /* CSS COMÚN */
 
+@media ui
+{
+ ::header, ::footer, ::top, ::bottom, ::chrome, ::brand,
+ ::header:inactive, ::header:active, ::header:translucent
+ {
+  color: blue;
+  background-color: white;
+ }
+}
+
 * {
  box-sizing: border-box;
 }
