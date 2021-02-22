@@ -23,7 +23,7 @@ body {
 .backvideo video {
     position: absolute;
     height: 100vh;
-    width: 130vw;
+    width: 100vw;
     object-fit: cover;
 }
 
