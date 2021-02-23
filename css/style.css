@@ -12,8 +12,6 @@
 body {
  margin: 0px;
  padding: 0px;
- width: 100vw;
- overflow: hidden;
 }
 
 .backvideo {
@@ -59,27 +57,49 @@ body {
 #menuitemleft::before {
     position: absolute;
     top: 91px;
-    left: 0px;
+    left: 20px;
     content: "";
     background-color: #101010;
     border-right: 1px solid #333;
     border-bottom: 1px solid #333;
     height: 15px;
-    width: 90px;
-    transform: skewX(-45deg) translateX(-50px);
+    width: 50px;
+    transform: skewX(-45deg);
+}
+
+#menuitemleft::after {
+    position: absolute;
+    top: 91px;
+    left: 0px;
+    content: "";
+    background-color: #101010;
+    border-bottom: 1px solid #333;
+    height: 15px;
+    width: 50px;
 }
 
 #menuitemright::before {
     position: absolute;
     top: 91px;
-    right: 0px;
+    right: 20px;
     content: "";
     background-color: #101010;
     border-right: 1px solid #333;
     border-bottom: 1px solid #333;
     height: 15px;
-    width: 90px;
-    transform: skewX(45deg) translateX(50px);
+    width: 50px;
+    transform: skewX(45deg);
+}
+
+#menuitemright::after {
+    position: absolute;
+    top: 91px;
+    right: 0px;
+    content: "";
+    background-color: #101010;
+    border-bottom: 1px solid #333;
+    height: 15px;
+    width: 50px;
 }
 
 .menusecondlevel {
@@ -252,6 +272,12 @@ a.submenuhead {
                 top: 99px;
             }
             #menuitemright::before {
+                top: 99px;
+            }
+            #menuitemright::after {
+                top: 99px;
+            }
+            #menuitemleft::after {
                 top: 99px;
             }
             .menusecondlevel {
