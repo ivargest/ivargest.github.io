@@ -56,20 +56,20 @@ body {
 
 #menuitemleft::before {
     position: absolute;
-    top: 91px;
+    top: 90.5px;
     left: 20px;
     content: "";
     background-color: #101010;
     border-right: 1px solid #333;
     border-bottom: 1px solid #333;
     height: 15px;
-    width: 50px;
+    width: 40px;
     transform: skewX(-45deg);
 }
 
 #menuitemleft::after {
     position: absolute;
-    top: 91px;
+    top: 90.5px;
     left: 0px;
     content: "";
     background-color: #101010;
@@ -80,20 +80,20 @@ body {
 
 #menuitemright::before {
     position: absolute;
-    top: 91px;
+    top: 90.5px;
     right: 20px;
     content: "";
     background-color: #101010;
     border-right: 1px solid #333;
     border-bottom: 1px solid #333;
     height: 15px;
-    width: 50px;
+    width: 40px;
     transform: skewX(45deg);
 }
 
 #menuitemright::after {
     position: absolute;
-    top: 91px;
+    top: 90.5px;
     right: 0px;
     content: "";
     background-color: #101010;
@@ -248,7 +248,7 @@ a.submenuhead {
             }
             #menuprojects::after {
                 position: absolute;
-                top: 99px;
+                top: 98.5px;
                 content: "";
                 background-color: #101010;
                 border-left: 1px solid #333;
@@ -259,7 +259,7 @@ a.submenuhead {
             }
             #menuprojects::before {
                 position: absolute;
-                top: 99px;
+                top: 98.5px;
                 content: "";
                 background-color: #101010;
                 border-right: 1px solid #333;
@@ -269,16 +269,16 @@ a.submenuhead {
                 transform: skewX(-45deg) translateX(10px);
             }
             #menuitemleft::before {
-                top: 99px;
+                top: 98.5px;
             }
             #menuitemright::before {
-                top: 99px;
+                top: 98.5px;
             }
             #menuitemright::after {
-                top: 99px;
+                top: 98.5px;
             }
             #menuitemleft::after {
-                top: 99px;
+                top: 98.5px;
             }
             .menusecondlevel {
                 height: 50px;
