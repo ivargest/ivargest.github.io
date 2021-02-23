@@ -30,7 +30,7 @@ body {
     width: 100vw;
     object-fit: cover;
     object-position: center;
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
 .overvideo {
@@ -126,6 +126,14 @@ a.submenuhead {
     width: 26px;
 }
 
+.space {
+    top: 100%;
+    position: absolute;
+    height: 10px;
+    background: #171717;
+    width: 100%;
+}
+
 
 
 
@@ -138,13 +146,13 @@ a.submenuhead {
 
     /* IPAD */
 
-        @media screen and (max-width: 1050px) {
+        @media screen and (max-width: 1050px) and (min-width: 600px) {
             .submenuitem div {
-                height: 26px;
+                height: 22px;
                 width: 26px;
             }
             .menuitem div {
-                height: 26px;
+                height: 22px;
                 width: 26px;
             }
             .submenuitem span {
@@ -164,9 +172,10 @@ a.submenuhead {
     /* SMARTPHONE */
         @media screen and (max-width: 600px) {
             .menuitem div {
-                height: 30px;
-                width: 30px;
+                height: 26px;
+                width: 32px;
                 margin: 0px;
+                cursor: pointer;
             }
             .menuitem {
                 width: 100%;
@@ -195,7 +204,10 @@ a.submenuhead {
                 margin-bottom: 20px;
             }
             .menusecondlevel {
-                height: 46px;
+                height: 50px;
+            }
+            .menuitem span {
+                display: none;
             }
         }
 
