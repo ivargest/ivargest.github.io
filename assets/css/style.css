@@ -1,0 +1,398 @@
+/* FUENTES */
+
+/* VARIABLES */
+
+/* CSS COMÚN */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #C7C7C7;
+    overflow-x: hidden;
+}
+
+/*==========================================================================================================================================
+    HEADER
+==========================================================================================================================================*/
+
+header {
+    background-color: #000;
+    height: 120px;
+    width: 100%;
+}
+
+/*==========================================================================================================================================
+    NAVBAR
+==========================================================================================================================================*/
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #2c2c2c;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    z-index: 1000;
+}
+
+/*==========================================================================================================================================
+    SECCION
+==========================================================================================================================================*/
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0px 0px 0px;
+    width: 100%;
+    padding: 0px 15px;
+    font-family: sans-serif;
+}
+
+.menucontenidos, .menuusuario {
+    width: 320px;
+    min-width: 230px;
+    position: sticky;
+    top: 75px;
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
+}
+
+.menucontenidos::-webkit-scrollbar, .menuusuario::-webkit-scrollbar {
+    cursor: pointer;
+    width: 30px;
+}
+   
+.menucontenidos::-webkit-scrollbar, .menuusuario::-webkit-scrollbar-thumb {
+    background: #acacac;
+    border-radius: 20px;
+    border: 8px solid #C7C7C7;
+  }
+
+.contenidocentral {
+    width: 820px;
+    transform: translateY(-75px);
+}
+
+.menucontenidos {
+    margin-right: 15px;
+}
+
+.menuusuario {
+    margin-left: 15px;
+}
+
+/*==========================================================================================================================================
+    CONTENIDOS GENERALES
+==========================================================================================================================================*/
+
+.titulopordefecto {
+    width: 100%;
+    height: 50px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.titulopordefecto h3 {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+/*==========================================================================================================================================
+    MENUS LATERALES
+==========================================================================================================================================*/
+
+.contenedormenu {
+    margin-bottom: 15px;
+}
+
+.contenedormenu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedormenu a {
+    width: 100%;
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    font-size: 14px;
+    background-color: #f8f8f8;
+    padding: 6px 15px;
+    margin-top: 1px;
+}
+
+.ejerciciobackend li::after {
+    content: "EXR";
+    padding: 2px 5px;
+    position: absolute;
+    background-color: #00a826;;
+    border-radius: 2px;
+    right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.contenedormenu ul a:hover {
+    background-color: #E5F6E9;
+}
+
+.contenedormenu ul a:focus {
+    background-color: #E5F6E9;
+}
+
+#candado {
+    width: 16px;
+    height: 16px;
+    background-image: url(../rsc/img/lock.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotateZ(0deg);
+}
+
+/*==========================================================================================================================================
+    LOGIN MENU
+==========================================================================================================================================*/
+
+
+
+/*==========================================================================================================================================
+    SECCIÓN CENTRAL
+==========================================================================================================================================*/
+
+.contenedorapartados {
+    border-radius: 5px;
+    padding-top: 75px;
+    overflow: hidden;
+}
+
+.apartado {
+    background-color: #f8f8f8;
+    padding: 16px 50px;
+}
+
+.apartado a {
+    color: #00a826;
+    text-decoration: none;
+}
+
+.apartado p {
+    margin: 0px 0px 20px 0px;
+}
+
+.imagenapartado img {
+    width: 49%;
+}
+
+.imagenapartado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imagenapartado2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagenapartado2 img {
+    width: 80%;
+}
+
+div.visualstudio {
+    padding: 30px;
+    margin: 0px 15px;
+    background-color: #282923;
+    color: white;
+}
+
+span.etiqueta {
+    color: #f92472;
+}
+
+span.comentario {
+    color: #666666;
+}
+
+span.atributo {
+    color: #a6e22a;
+}
+
+span.variablescolor {
+    color: #67d8ef;
+}
+
+/*==========================================================================================================================================
+    EJERCICIOS
+==========================================================================================================================================*/
+
+.contenedorejercicio {
+    display: flex;
+    justify-content: center;
+}
+
+#marcadelcoche, #modelodelcoche, #buscarCoche, .resultadoCoches, #generarCarta {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+    min-width: 200px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.resultadoCoches {
+    font-size: 24px;
+}
+
+.primerejercicio {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.segundoejercicio {
+    width: 32vw;
+}
+
+.espaciocartas {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 25px;
+    perspective: 800px;
+}
+
+.imprimirCartatreboles, .imprimirCartapicas, .imprimirCartacorazones, .imprimirCartadiamantes {
+    width: 120px;
+    height: 200px;
+    position: relative;
+    font-size: 22px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.imprimirCartatreboles, .imprimirCartapicas {
+    border: solid 10px #2c2c2c;
+}
+
+.imprimirCartacorazones, .imprimirCartadiamantes {
+    border: solid 10px #a52a2a;
+}
+
+.diamantes, .corazones, .picas, .treboles {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.diamantes {
+    background-image: url(../rsc/img/diamantes.svg);
+}
+
+.corazones {
+    background-image: url(../rsc/img/corazones.svg);
+}
+
+.picas {
+    background-image: url(../rsc/img/picas.svg);
+}
+
+.treboles {
+    background-image: url(../rsc/img/treboles.svg);
+}
+
+.tercerejercicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.trebolesarriba, .picasarriba {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 5px;
+    color: #2c2c2c;
+}
+
+.corazonesarriba, .diamantesarriba {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 5px;
+    color: brown;
+}
+
+.trebolesabajo, .picasabajo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 5px;
+    color: #2c2c2c;
+    transform: rotateZ(180deg);
+}
+
+.corazonesabajo, .diamantesabajo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 5px;
+    color: brown;
+    transform: rotateZ(180deg);
+}
+
+.casillasblancas, .casillasnegras {
+    width: 4vw;
+    height: 4vw;
+    float:left;
+}
+
+.casillasblancas {
+    background-color: white;
+}
+
+.casillasnegras {
+    background-color: #2c2c2c;
+}
+
+.casilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+img.ficha {
+    width: 90%;
+    height: 90%;
+}
+
+/* RESPONSIVE */
+
+/* ANIMACIONES */
